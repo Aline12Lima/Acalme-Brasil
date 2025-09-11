@@ -13,6 +13,16 @@ export default {
       },
     },
     extend: {
+      backgroundImage: {
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-section': 'var(--gradient-section)',
+      },
+      boxShadow: {
+        'natural': 'var(--shadow-natural)',
+      },
+      transitionTimingFunction: {
+        'smooth': 'var(--transition-smooth)',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
