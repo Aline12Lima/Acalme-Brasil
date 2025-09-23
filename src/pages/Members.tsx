@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, Star } from "lucide-react";
-import Layout from "@/components/Layout";
+
 
 const Membership = () => {
   const plans = [
@@ -15,8 +15,8 @@ const Membership = () => {
         "Consultas online mensais",
         "Descontos em produtos naturais",
         "Newsletter exclusiva",
-        "Suporte via email"
-      ]
+        "Suporte via email",
+      ],
     },
     {
       name: "Duplo",
@@ -29,8 +29,8 @@ const Membership = () => {
         "Consultas presenciais",
         "Workshop mensais",
         "Desconto adicional de 15%",
-        "Suporte prioritário"
-      ]
+        "Suporte prioritário",
+      ],
     },
     {
       name: "Família",
@@ -43,21 +43,20 @@ const Membership = () => {
         "Plano nutricional personalizado",
         "Acompanhamento familiar",
         "Desconto adicional de 25%",
-        "Consultoria domiciliar mensal"
-      ]
-    }
+        "Consultoria domiciliar mensal",
+      ],
+    },
   ];
 
   return (
-    <Layout>
+    <div>
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold text-white mb-6">
-            Associe-se
-          </h1>
+          <h1 className="text-5xl font-bold text-white mb-6">Associe-se</h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Escolha o plano ideal para você e sua família e tenha acesso completo aos nossos serviços
+            Escolha o plano ideal para você e sua família e tenha acesso
+            completo aos nossos serviços
           </p>
         </div>
       </section>
@@ -67,9 +66,11 @@ const Membership = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             {plans.map((plan, index) => (
-              <Card 
-                key={index} 
-                className={`relative ${plan.popular ? 'border-primary shadow-natural scale-105' : ''}`}
+              <Card
+                key={index}
+                className={`relative ${
+                  plan.popular ? "border-primary shadow-natural scale-105" : ""
+                }`}
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -79,29 +80,34 @@ const Membership = () => {
                     </div>
                   </div>
                 )}
-                
+
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl font-bold text-foreground">
                     {plan.name}
                   </CardTitle>
                   <div className="mt-4">
-                    <span className="text-4xl font-bold text-primary">{plan.price}</span>
+                    <span className="text-4xl font-bold text-primary">
+                      {plan.price}
+                    </span>
                     <span className="text-muted-foreground">{plan.period}</span>
                   </div>
                 </CardHeader>
-                
+
                 <CardContent className="space-y-4">
                   <ul className="space-y-3">
                     {plan.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start gap-3">
-                        <Check className="text-primary mt-1 flex-shrink-0" size={16} />
+                        <Check
+                          className="text-primary mt-1 flex-shrink-0"
+                          size={16}
+                        />
                         <span className="text-muted-foreground">{feature}</span>
                       </li>
                     ))}
                   </ul>
-                  
-                  <Button 
-                    className="w-full mt-6" 
+
+                  <Button
+                    className="w-full mt-6"
                     variant={plan.popular ? "default" : "outline"}
                     size="lg"
                   >
@@ -120,7 +126,7 @@ const Membership = () => {
           <h2 className="text-4xl font-bold text-center text-foreground mb-12">
             Por que se Associar?
           </h2>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card>
               <CardContent className="p-6 text-center">
@@ -187,7 +193,7 @@ const Membership = () => {
           <h2 className="text-4xl font-bold text-center text-foreground mb-12">
             Perguntas Frequentes
           </h2>
-          
+
           <div className="max-w-3xl mx-auto space-y-6">
             <Card>
               <CardContent className="p-6">
@@ -195,7 +201,8 @@ const Membership = () => {
                   Posso cancelar minha associação a qualquer momento?
                 </h3>
                 <p className="text-muted-foreground">
-                  Sim, você pode cancelar sua associação a qualquer momento sem multas ou taxas adicionais.
+                  Sim, você pode cancelar sua associação a qualquer momento sem
+                  multas ou taxas adicionais.
                 </p>
               </CardContent>
             </Card>
@@ -206,7 +213,8 @@ const Membership = () => {
                   Como funcionam as consultas online?
                 </h3>
                 <p className="text-muted-foreground">
-                  As consultas são realizadas via videochamada com nossos especialistas em horários agendados previamente.
+                  As consultas são realizadas via videochamada com nossos
+                  especialistas em horários agendados previamente.
                 </p>
               </CardContent>
             </Card>
@@ -217,14 +225,15 @@ const Membership = () => {
                   Os descontos se aplicam a todos os produtos?
                 </h3>
                 <p className="text-muted-foreground">
-                  Os descontos se aplicam à maioria dos nossos produtos naturais, exceto itens em promoção específica.
+                  Os descontos se aplicam à maioria dos nossos produtos
+                  naturais, exceto itens em promoção específica.
                 </p>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
-    </Layout>
+    </div>
   );
 };
 

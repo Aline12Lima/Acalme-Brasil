@@ -1,16 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
-import Layout from "@/components/Layout";
 import childrenWellnessImg from "@/assets/children-wellness.jpg";
 
 const About = () => {
   return (
-    <Layout>
+    <div>
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold text-white mb-6">
-            Sobre Nós
-          </h1>
+          <h1 className="text-5xl font-bold text-white mb-6">Sobre Nós</h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Dedicados a promover a saúde e bem-estar através da medicina natural
           </p>
@@ -32,20 +29,20 @@ const About = () => {
                       Tratamento Holístico
                     </h3>
                     <p className="text-muted-foreground">
-                      Abordamos o corpo como um todo, tratando não apenas os sintomas, 
-                      mas as causas raiz dos problemas de saúde.
+                      Abordamos o corpo como um todo, tratando não apenas os
+                      sintomas, mas as causas raiz dos problemas de saúde.
                     </p>
                   </CardContent>
                 </Card>
-                
+
                 <Card className="border-primary/20">
                   <CardContent className="p-6">
                     <h3 className="text-xl font-semibold mb-3 text-primary">
                       Sem Efeitos Colaterais
                     </h3>
                     <p className="text-muted-foreground">
-                      Nossos tratamentos naturais minimizam os efeitos colaterais, 
-                      proporcionando cura suave e eficaz.
+                      Nossos tratamentos naturais minimizam os efeitos
+                      colaterais, proporcionando cura suave e eficaz.
                     </p>
                   </CardContent>
                 </Card>
@@ -56,18 +53,18 @@ const About = () => {
                       Sustentabilidade
                     </h3>
                     <p className="text-muted-foreground">
-                      Promovemos práticas sustentáveis que respeitam o meio ambiente 
-                      e preservam os recursos naturais.
+                      Promovemos práticas sustentáveis que respeitam o meio
+                      ambiente e preservam os recursos naturais.
                     </p>
                   </CardContent>
                 </Card>
               </div>
             </div>
-            
+
             <div>
-              <img 
-                src={childrenWellnessImg} 
-                alt="Crianças saudáveis brincando na natureza" 
+              <img
+                src={childrenWellnessImg}
+                alt="Crianças saudáveis brincando na natureza"
                 className="rounded-lg shadow-natural w-full h-auto"
               />
             </div>
@@ -79,13 +76,15 @@ const About = () => {
               Nossa Missão
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-8">
-              Promover a saúde e bem-estar das famílias através de produtos e 
-              tratamentos naturais de alta qualidade, educação em saúde preventiva 
-              e práticas sustentáveis que respeitam o equilíbrio da natureza.
+              Promover a saúde e bem-estar das famílias através de produtos e
+              tratamentos naturais de alta qualidade, educação em saúde
+              preventiva e práticas sustentáveis que respeitam o equilíbrio da
+              natureza.
             </p>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              Acreditamos que cada pessoa merece acesso a cuidados de saúde que 
-              honrem a sabedoria da natureza e promovam a cura verdadeira e duradoura.
+              Acreditamos que cada pessoa merece acesso a cuidados de saúde que
+              honrem a sabedoria da natureza e promovam a cura verdadeira e
+              duradoura.
             </p>
           </div>
         </div>
@@ -104,7 +103,8 @@ const About = () => {
                   Qualidade
                 </h3>
                 <p className="text-muted-foreground">
-                  Compromisso com a excelência em todos os nossos produtos e serviços.
+                  Compromisso com a excelência em todos os nossos produtos e
+                  serviços.
                 </p>
               </CardContent>
             </Card>
@@ -115,7 +115,8 @@ const About = () => {
                   Transparência
                 </h3>
                 <p className="text-muted-foreground">
-                  Informações claras sobre nossos processos, ingredientes e métodos.
+                  Informações claras sobre nossos processos, ingredientes e
+                  métodos.
                 </p>
               </CardContent>
             </Card>
@@ -133,7 +134,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </div>
   );
 };
 

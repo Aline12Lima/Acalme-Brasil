@@ -3,19 +3,18 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import Layout from "@/components/Layout";
+
 
 const Contact = () => {
   return (
-    <Layout>
+    <div>
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold text-white mb-6">
-            Contato
-          </h1>
+          <h1 className="text-5xl font-bold text-white mb-6">Contato</h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Entre em contato conosco para esclarecer dúvidas ou agendar uma consulta
+            Entre em contato conosco para esclarecer dúvidas ou agendar uma
+            consulta
           </p>
         </div>
       </section>
@@ -46,31 +45,31 @@ const Contact = () => {
                     <Input type="email" placeholder="seu@email.com" />
                   </div>
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Telefone
                   </label>
                   <Input placeholder="(11) 99999-9999" />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Assunto
                   </label>
                   <Input placeholder="Assunto da sua mensagem" />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Mensagem
                   </label>
-                  <Textarea 
+                  <Textarea
                     placeholder="Descreva sua dúvida ou como podemos ajudá-lo"
                     rows={6}
                   />
                 </div>
-                
+
                 <Button className="w-full" size="lg">
                   Enviar Mensagem
                 </Button>
@@ -86,7 +85,9 @@ const Contact = () => {
                       <Phone className="text-primary" size={24} />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-foreground">Telefone</h3>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        Telefone
+                      </h3>
                       <p className="text-muted-foreground">(11) 3456-7890</p>
                       <p className="text-muted-foreground">(11) 99999-9999</p>
                     </div>
@@ -101,9 +102,15 @@ const Contact = () => {
                       <Mail className="text-primary" size={24} />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-foreground">Email</h3>
-                      <p className="text-muted-foreground">contato@medicinanatural.com.br</p>
-                      <p className="text-muted-foreground">consultas@medicinanatural.com.br</p>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        Email
+                      </h3>
+                      <p className="text-muted-foreground">
+                        contato@medicinanatural.com.br
+                      </p>
+                      <p className="text-muted-foreground">
+                        consultas@medicinanatural.com.br
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -116,10 +123,14 @@ const Contact = () => {
                       <MapPin className="text-primary" size={24} />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-foreground">Endereço</h3>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        Endereço
+                      </h3>
                       <p className="text-muted-foreground">
-                        Rua das Plantas Medicinais, 123<br />
-                        Jardim Natural - São Paulo, SP<br />
+                        Rua das Plantas Medicinais, 123
+                        <br />
+                        Jardim Natural - São Paulo, SP
+                        <br />
                         CEP: 01234-567
                       </p>
                     </div>
@@ -134,7 +145,9 @@ const Contact = () => {
                       <Clock className="text-primary" size={24} />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-foreground">Horário de Funcionamento</h3>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        Horário de Funcionamento
+                      </h3>
                       <div className="text-muted-foreground space-y-1">
                         <p>Segunda a Sexta: 8h às 18h</p>
                         <p>Sábado: 8h às 14h</p>
@@ -162,7 +175,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </div>
   );
 };
 

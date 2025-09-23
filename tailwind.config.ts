@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -14,14 +19,14 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'gradient-hero': 'var(--gradient-hero)',
-        'gradient-section': 'var(--gradient-section)',
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-section": "var(--gradient-section)",
       },
       boxShadow: {
-        'natural': 'var(--shadow-natural)',
+        natural: "var(--shadow-natural)",
       },
       transitionTimingFunction: {
-        'smooth': 'var(--transition-smooth)',
+        smooth: "var(--transition-smooth)",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -66,6 +71,15 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        grayPalette: {
+          "apple-gray-brand": "#A2AAAD",
+          "gray-apple-1": "#8E8E93",
+          "gray-apple-2": "#636366",
+          "gray-apple-3": "#48484A",
+          "gray-apple-4": "#D1D1D6",
+          "gray-apple-5": "#E5E5EA",
+          "gray-apple-6": "#F2F2F7",
         },
       },
       borderRadius: {
