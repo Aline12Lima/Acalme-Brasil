@@ -1,8 +1,6 @@
 <div align="center">
   <br />
-
-    <img width="1280" height="720" alt="Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of 10,000 REACT COMPONENTS (5)" src="https://github.com/Aline12Lima/Associa-ao-CannabiBrasil/blob/main/src/assets/oleo_eplanta.jpeg" />
-  </a>
+  <img width="1280" height="720" alt="Imagem de capa" src="https://raw.githubusercontent.com/Aline12Lima/Associa-ao-CannabiBrasil/main/src/assets/oleo_eplanta.jpeg" />
   <br />
   <div>
     <img src="https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
