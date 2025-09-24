@@ -1,3 +1,23 @@
+<div align="center">
+  <br />
+
+    <img width="1280" height="720" alt="Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of 10,000 REACT COMPONENTS (5)" src="https://github.com/Aline12Lima/Associa-ao-CannabiBrasil/blob/main/src/assets/oleo_eplanta.jpeg" />
+  </a>
+  <br />
+  <div>
+    <img src="https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
+    <img src="https://img.shields.io/badge/-Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
+    <img src="https://img.shields.io/badge/-Stream-0057FF?style=for-the-badge&logo=getstream&logoColor=white" alt="Stream" />
+    <img src="https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+    <img src="https://img.shields.io/badge/-TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  </div>
+  <br />
+</div>
+
+
+
+
 Associação CanabbiBrasil (nome ficticío)
 Uma plataforma web informativa para a Associação, focada em fornecer apoio, conhecimento sobre cannabis medicinal e acesso a serviços para pacientes associados. O projeto foi desenvolvido com uma abordagem moderna e profissional, priorizando a segurança, a usabilidade e a acessibilidade da informação.
 
