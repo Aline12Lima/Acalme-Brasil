@@ -1,7 +1,10 @@
+// src/main.tsx
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
+// Importe todas as suas páginas
 import Home from "./pages/Home.tsx";
 import About from "./pages/About.tsx";
 import Articles from "./pages/Articles.tsx";
@@ -15,7 +18,7 @@ import NossoProposito from "./pages/Purpose.tsx";
 import App from "./App.tsx";
 import Layout from "./components/common/Layout.tsx";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -26,36 +29,15 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
+      { path: "sobre", element: <About /> },
+      { path: "artigos", element: <Articles /> },
+      { path: "associe-se", element: <Members /> },
+      { path: "contato", element: <Contact /> },
+      { path: "termo-consentimento", element: <TermoConsentimento /> },
+      { path: "politica-privacidade", element: <PoliticaPrivacidade /> },
+      { path: "nosso-proposito", element: <NossoProposito /> },
       {
-        path: "sobre",
-        element: <About />,
-      },
-      {
-        path: "artigos",
-        element: <Articles />,
-      },
-      {
-        path: "associe-se",
-        element: <Members />,
-      },
-      {
-        path: "contato",
-        element: <Contact />,
-      },
-      {
-        path: "termo-consentimento",
-        element: <TermoConsentimento />,
-      },
-      {
-        path: "politica-privacidade",
-        element: <PoliticaPrivacidade />,
-      },
-      {
-        path: "nosso-proposito",
-        element: <NossoProposito />,
-      },
-      {
-        path: "not-found",
+        path: "*", // <-- CORRIGIDO AQUI
         element: <NotFound />,
       },
     ],
