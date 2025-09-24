@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logotipo-acalmebrasil277x70.png";
+import logo from "@/assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
@@ -11,14 +11,14 @@ const Header = () => {
     <header className="bg-gradient-hero text-white p-4 shadow-md">
       <nav className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold">
-          <img src={logo} alt="logo Acalme Brasil" className="h-22" />
+          <img src={logo} alt="logo Acalme Brasil" className="h-24 rounded-lg" />
         </Link>
 
         <ul className="flex space-x-6 ml-auto items-center">
           <li>
             <Link
               to="/"
-              className="hover:text-blue-300 transition-colors duration-200"
+              className="hover:text-grayPalette-gray-apple-2 transition-colors duration-200"
             >
               Página Inicial
             </Link>
@@ -26,15 +26,15 @@ const Header = () => {
           <li>
             <Link
               to="/sobre"
-              className="hover:text-blue-300 transition-colors duration-200"
+              className="hover:text-grayPalette-gray-apple-2 transition-colors duration-200"
             >
               Sobre Nós
             </Link>
           </li>
           <li>
             <Link
-              to="/sobre"
-              className="hover:text-blue-300 transition-colors duration-200"
+              to="/nosso-proposito"
+              className="hover:text-grayPalette-gray-apple-2 transition-colors duration-200"
             >
               Nosso Propósito
             </Link>
@@ -42,7 +42,7 @@ const Header = () => {
           <li>
             <Link
               to="/artigos"
-              className="hover:text-blue-300 transition-colors duration-200"
+              className="hover:text-grayPalette-gray-apple-2 transition-colors duration-200"
             >
               Artigos
             </Link>
@@ -50,7 +50,7 @@ const Header = () => {
           <li>
             <Link
               to="/associe-se"
-              className="hover:text-blue-300 transition-colors duration-200"
+              className="hover:text-grayPalette-gray-apple-2 transition-colors duration-200"
             >
               Associe-se
             </Link>
@@ -58,7 +58,7 @@ const Header = () => {
           <li>
             <Link
               to="/contato"
-              className="hover:text-blue-300 transition-colors duration-200"
+              className="hover:text-grayPalette-gray-apple-2 transition-colors duration-200"
             >
               Contato
             </Link>
@@ -66,7 +66,7 @@ const Header = () => {
           <li>
             <Link
               to="/login"
-              className="bg-gradient-hero hover:bg-blue-300 text-white font-bold py-2 px-4 rounded transition-colors duration-200 flex items-center"
+              className="bg-grayPalette-gray-apple-1 hover:bg-grayPalette-gray-apple-2 text-white font-bold py-2 px-4 rounded transition-colors duration-200 flex items-center justify-center"
             >
               <FontAwesomeIcon icon={faUser} className="mr-2" />
               Login

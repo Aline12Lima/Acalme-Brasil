@@ -4,15 +4,16 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
-
 const Contact = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-hero">
+      <section className="py-20 bg-grayPalette-gray-apple-6 mb-0">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold text-white mb-6">Contato</h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <h1 className="text-5xl font-bold text-grayPalette-gray-apple-2 mb-6">
+            Contato
+          </h1>
+          <p className="text-xl text-grayPalette-gray-apple-1/90 max-w-3xl mx-auto">
             Entre em contato conosco para esclarecer dúvidas ou agendar uma
             consulta
           </p>
@@ -158,20 +159,6 @@ const Contact = () => {
                 </CardContent>
               </Card>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Map Section */}
-      <section className="py-20 bg-gradient-section">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-foreground mb-12">
-            Nossa Localização
-          </h2>
-          <div className="bg-muted rounded-lg h-96 flex items-center justify-center">
-            <p className="text-muted-foreground text-lg">
-              Mapa interativo da localização
-            </p>
           </div>
         </div>
       </section>

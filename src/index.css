@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -36,8 +32,16 @@ All colors MUST be HSL.
     --input: 171 20% 90%;
     --ring: 171 55% 54%;
 
-    --gradient-hero: linear-gradient(135deg, hsl(171 55% 54%), hsl(171 45% 64%));
-    --gradient-section: linear-gradient(180deg, hsl(171 10% 98%), hsl(171 5% 95%));
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(171 55% 54%),
+      hsl(171 45% 64%)
+    );
+    --gradient-section: linear-gradient(
+      180deg,
+      hsl(171 10% 98%),
+      hsl(171 5% 95%)
+    );
     --shadow-natural: 0 10px 30px -10px hsl(171 55% 54% / 0.2);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 

@@ -69,12 +69,12 @@ const Articles = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-hero">
+      <section className="py-20 bg-grayPalette-gray-apple-6 mb-0">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold text-white mb-6">
+          <h1 className="text-5xl font-bold text-grayPalette-gray-apple-3 mb-6">
             Artigos Científicos
           </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-xl text-grayPalette-gray-apple-3 max-w-3xl mx-auto">
             Conteúdo baseado em evidências científicas sobre medicina natural e
             fitoterapia
           </p>
@@ -88,11 +88,11 @@ const Articles = () => {
             {articles.map((article) => (
               <Card
                 key={article.id}
-                className="hover:shadow-natural transition-smooth cursor-pointer"
+                className="hover:shadow-natural transition-smooth cursor-pointer bg-grayPalette-gray-apple-5"
               >
                 <CardHeader>
-                  <div className="flex items-center gap-2 text-sm text-primary mb-2">
-                    <span className="bg-primary/10 px-3 py-1 rounded-full">
+                  <div className="flex items-center gap-2 text-sm text-white mb-2">
+                    <span className="bg-gradient-hero px-3 py-1 rounded-full ">
                       {article.category}
                     </span>
                   </div>
@@ -129,20 +129,6 @@ const Articles = () => {
               </Card>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="py-20 bg-gradient-section">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-foreground mb-6">
-            Mantenha-se Atualizado
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Receba as últimas pesquisas e artigos sobre medicina natural
-            diretamente em seu email
-          </p>
-          <Button className="px-8 py-3">Assinar Newsletter</Button>
         </div>
       </section>
     </div>

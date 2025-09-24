@@ -85,7 +85,7 @@ const HeroCarousel: React.FC = () => {
   );
 
   return (
-    <section className="relative w-full min-h-[460vh] overflow-hidden">
+    <section className="relative w-full min-h-[20vh] overflow-hidden">
       <Carousel
         plugins={[Autoplay({ delay: 8000, stopOnInteraction: false })]}
         opts={{ loop: true }}
@@ -98,9 +98,9 @@ const HeroCarousel: React.FC = () => {
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full"
+                className="w-full h-[480px] object-cover" // Set a fixed height and object-fit
               />
-              <div className="absolute inset-0  flex flex-col items-center justify-start p-4 text-center pt-16 h-full">
+              <div className="absolute inset-0  flex flex-col items-center justify-start p-4 text-left pt-16 h-full">
                 <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
                   {item.title}
                 </h1>

@@ -8,6 +8,9 @@ import Articles from "./pages/Articles.tsx";
 import Members from "./pages/Members.tsx";
 import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
+import TermoConsentimento from "./pages/TermoConsentimento";
+import NossoProposito from "./pages/Purpose.tsx";
 
 import App from "./App.tsx";
 import Layout from "./components/common/Layout.tsx";
@@ -38,6 +41,18 @@ const router = createBrowserRouter([
       {
         path: "contato",
         element: <Contact />,
+      },
+      {
+        path: "termo-consentimento",
+        element: <TermoConsentimento />,
+      },
+      {
+        path: "politica-privacidade",
+        element: <PoliticaPrivacidade />,
+      },
+      {
+        path: "nosso-proposito",
+        element: <NossoProposito />,
       },
       {
         path: "not-found",

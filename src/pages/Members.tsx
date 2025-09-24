@@ -2,48 +2,32 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, Star } from "lucide-react";
 
-
 const Membership = () => {
   const plans = [
     {
       name: "Individual",
-      price: "R$ 100,00",
-      period: "/mês",
+      price: "R$ 420,00",
+      period: "/ano",
       popular: false,
       features: [
-        "Acesso completo aos artigos científicos",
-        "Consultas online mensais",
-        "Descontos em produtos naturais",
-        "Newsletter exclusiva",
-        "Suporte via email",
-      ],
-    },
-    {
-      name: "Duplo",
-      price: "R$ 180,00",
-      period: "/mês",
-      popular: true,
-      features: [
-        "Tudo do plano Individual",
-        "2 pessoas incluídas",
-        "Consultas presenciais",
-        "Workshop mensais",
-        "Desconto adicional de 15%",
-        "Suporte prioritário",
+        "Titular tem direito a registrar um dependente menor de 18 anos, ou maior de 65 anos, ou Pet.",
+        "Acolhimento",
+        "Desconto em Consultas",
+        "Acesso aos produtos para até 2 prescrições",
+        "(Titular + 1 dependente menor de idade, maior de 65 anos ou Pet)",
       ],
     },
     {
       name: "Família",
-      price: "R$ 250,00",
-      period: "/mês",
-      popular: false,
+      price: "R$ 630,00",
+      period: "/ano",
+      popular: true,
       features: [
-        "Tudo do plano Duplo",
-        "Até 3 pessoas incluídas",
-        "Plano nutricional personalizado",
-        "Acompanhamento familiar",
-        "Desconto adicional de 25%",
-        "Consultoria domiciliar mensal",
+        "Titular tem direito a registrar até dependentes com idade entre 18 e 65 anos",
+        "Acolhimento",
+        "Desconto em Consultas",
+        "Acesso aos produtos para até 2 prescrições",
+        "(Titular + 1 dependente menor de idade, maior de 65 anos ou Pet)",
       ],
     },
   ];
@@ -51,10 +35,12 @@ const Membership = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-hero">
+      <section className="py-20 bg-grayPalette-gray-apple-7 text-center mb-0">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold text-white mb-6">Associe-se</h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <h1 className="text-5xl font-bold text-grayPalette-gray-apple-1 mb-6">
+            Associe-se
+          </h1>
+          <p className="text-xl ext-grayPalette-gray-apple-1 max-w-3xl mx-auto">
             Escolha o plano ideal para você e sua família e tenha acesso
             completo aos nossos serviços
           </p>
@@ -134,10 +120,10 @@ const Membership = () => {
                   <Check className="text-primary" size={24} />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-foreground">
-                  Acesso Exclusivo
+                  Descontos
                 </h3>
                 <p className="text-muted-foreground">
-                  Conteúdo científico premium e consultoria especializada
+                  Descontos exclusivos em produtos e consultas
                 </p>
               </CardContent>
             </Card>
@@ -148,10 +134,12 @@ const Membership = () => {
                   <Check className="text-primary" size={24} />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-foreground">
-                  Economia
+                  Acesso Facilitado
                 </h3>
                 <p className="text-muted-foreground">
-                  Descontos significativos em produtos e consultas
+                  Muitos medicamentos à base de cannabis importados ou nacionais
+                  são caros e de difícil obtenção, os associados têm acesso
+                  facilitado.
                 </p>
               </CardContent>
             </Card>
@@ -162,10 +150,11 @@ const Membership = () => {
                   <Check className="text-primary" size={24} />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-foreground">
-                  Acompanhamento
+                  Segurança Jurídica
                 </h3>
                 <p className="text-muted-foreground">
-                  Suporte contínuo para sua jornada de saúde natural
+                  Nossa associação opera com respaldo jurídico, para cultivar,
+                  manipular e desistir produtos aos associados.
                 </p>
               </CardContent>
             </Card>
@@ -213,8 +202,8 @@ const Membership = () => {
                   Como funcionam as consultas online?
                 </h3>
                 <p className="text-muted-foreground">
-                  As consultas são realizadas via videochamada com nossos
-                  especialistas em horários agendados previamente.
+                  Nós nao realizamos consultas, indicamos médicos ou você pode
+                  solicitar sua medicação com prescrição de outro profissional.
                 </p>
               </CardContent>
             </Card>
